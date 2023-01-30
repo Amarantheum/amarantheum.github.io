@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2023-01-30 00:06:11 -0800
 categories: jekyll update
-usemathjax: true
+mathjax: true
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
@@ -26,6 +26,11 @@ print_hi('Tom')
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 $a^2 + b^2 = c^2$
+
+$$\begin{eqnarray}
+x' &=& &x \sin\phi &+& z \cos\phi \\
+z' &=& - &x \cos\phi &+& z \sin\phi \\
+\end{eqnarray}$$
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
