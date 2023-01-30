@@ -27,11 +27,6 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 $$a^2 + b^2 = c^2$$
 
-$$\begin{eqnarray}
-x' &=& &x \sin\phi &+& z \cos\phi \\
-z' &=& - &x \cos\phi &+& z \sin\phi \\
-\end{eqnarray}$$
-
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
