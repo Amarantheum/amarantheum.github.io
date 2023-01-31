@@ -5,8 +5,6 @@ date:   2023-01-22 00:09:00 -0800
 categories: 420 Capstone
 ---
 
-# Week 2 - Bode Plots
-
 This week, I wrote an implementation for displaying Bode plots. The library works by taking a list of transfer function objects and generating a graph of the magnitude of the frequency response. The library then opens a window displaying the plot of the total frequency response of the transfer functions.
 
 ![image](/assets/images/bode_plot_0.png)
