@@ -37,9 +37,10 @@ where $$z$$ is any value in the complex plane. We can see that the Z-transform g
 The angle of a point on the unit circle relative to the positive real axis corresponds to a particular frequency. Given a sample rate $$s$$, we can convert a frequency $$f$$ in Hz to an angle on the unit circle with the equation:
 
 $$\omega = 2\pi\frac{f}{s}$$
+
 **notice that the Nyquist frequency is at -1 which means any value on the top half the unit circle and its complex conjugate correspond to the same frequency*
 
-To manipulate the frequency response of our system, we can place poles and zeros in the Z-plane in desired locations. By placing poles and zeros, we mean creating a transfer function in the Z-domain that goes to infinity and certain points and goes to zero at other points respectively. For example, the transfer function $$X(z) = \frac{z - 1}{z^2+\frac{1}{4}}$$ has a zero at $$z=0$$ and two poles at $$z=\pm \frac{j}{2}$$ which corresponds to the following pole-zero plot:
+To manipulate the frequency response of our system, we can place poles and zeros in the Z-plane in desired locations. By placing poles and zeros, we mean creating a transfer function in the Z-domain that goes to infinity and certain points and goes to zero at other points respectively. For example, the transfer function $$X(z) = \frac{z - 1}{z^2+\frac{1}{4}}$$ has a zero at $$z=1$$ and two poles at $$z=\pm \frac{j}{2}$$ which corresponds to the following pole-zero plot:
 
 ![image](/assets/images/PoleZeroPlotExample.svg)
 
