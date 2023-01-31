@@ -11,10 +11,9 @@ In order to explain how the resonator works, we're first going to have to dive i
 
 We define the discrete time Fourier transform (not to be confused with the discrete Fourier transform)
 of a signal $$x[n]$$ as:
+
 $$
-\begin{equation}
 X(e^{jw})=\sum_{n=-\infty}^{\infty}x[n]e^{-jwn}
-\end{equation}
 $$
 
 ![image](/assets/images/PoleZeroPlotBlank.svg)
