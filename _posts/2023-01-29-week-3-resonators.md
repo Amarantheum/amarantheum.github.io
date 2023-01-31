@@ -54,7 +54,7 @@ We can make use of the properties of poles in the Z-plane to create an LTI syste
 
 This results in a system with the following frequency response:
 
-![image](/assets/images/PoleZeroFreqResp.png)
+![image](/assets/images/pole_zero_freq_resp.png)
 
 We will now derive the equation for the generalized resonator:
 
