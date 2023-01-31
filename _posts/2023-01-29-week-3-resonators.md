@@ -10,7 +10,7 @@ The focus of this week was the resonator implementation.
 In order to explain how the resonator works, we're first going to have to dive into some math.
 
 We define the discrete time Fourier transform (not to be confused with the discrete Fourier transform)
-of a signal \(x[n]\) as:
+of a signal $$x[n]$$ as:
 $$
 \begin{equation}
 X(e^{jw})=\sum_{n=-\infty}^{\infty}x[n]e^{-jwn}
