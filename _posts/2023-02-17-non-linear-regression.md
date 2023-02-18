@@ -30,6 +30,6 @@ In other words, we want to minimize the distance between our model prediction an
 
 $$f(M)=\sum_{(x, y) \in P}\frac{1}{2}(M(x) - y)^2$$
 
-where $$M$$ is our model and $$M(x)$$ is the prediction of our model for input $x$.
+where $$M$$ is our model and $$M(x)$$ is the prediction of our model for input $$x$$.
 
 [least-squares]: https://en.wikipedia.org/wiki/Least_squares
