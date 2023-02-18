@@ -12,13 +12,15 @@
   {%- include custom-head.html -%}
 
   {% if page.mathjax %}
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [['$','$'], ['\\(','\\)']],
-          processEscapes: true
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        svg: {
+          fontCache: 'global'
         }
-      });
+      };
     </script>
     {% include mathjax.html %}
   {% endif %}
