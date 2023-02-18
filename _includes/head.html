@@ -12,16 +12,6 @@
   {%- include custom-head.html -%}
 
   {% if page.mathjax %}
-    <script>
-      MathJax = {
-        tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']]
-        },
-        svg: {
-          fontCache: 'global'
-        }
-      };
-    </script>
     {% include mathjax.html %}
   {% endif %}
   
