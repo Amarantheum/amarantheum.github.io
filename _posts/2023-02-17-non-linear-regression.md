@@ -22,7 +22,7 @@ Regression is the process of taking a set of points in a space with both an inde
 
 **Note that the dependent variable can be multi-dimensional*
 
-[Least squares](https://en.wikipedia.org/wiki/Least_squares) is an approach to this problem that uses the sum of the squares of the residuals of the model as an objective function that we must minimize. Residuals are the distance between each point and the corresponding model prediction for that point.
+<a href=https://en.wikipedia.org/wiki/Least_squares target="_blank">Least squares</a> is an approach to this problem that uses the sum of the squares of the residuals of the model as an objective function that we must minimize. Residuals are the distance between each point and the corresponding model prediction for that point.
 
 ![image](/assets/images/non-linear-regression/residual-ex.png)
 
@@ -46,8 +46,10 @@ we can attempt to fit the following resonance curve:
 
 ## Formal Mathematical Method
 
-The 
+The equation
 
+
+[previous-post]: https://amarantheum.github.io/420-capstone/2023/02/10/decay.html
 [least-squares]: https://en.wikipedia.org/wiki/Least_squares
 [gradient]: https://en.wikipedia.org/wiki/Gradient
 [gradient-descent]: https://en.wikipedia.org/wiki/Gradient_descent
