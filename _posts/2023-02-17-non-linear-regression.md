@@ -56,9 +56,11 @@ In order to calculate $$r$$ given a delay, we simply have to calculate at what v
 $$
 \begin{align*}
 r^n&=0.1\\
-\implies n &= \log_{r}(0.1)
+\implies r &= 0.1^{\frac{1}{n}}
 \end{align*}
 $$
+
+This equation gives us the value of $$r$$ given a desired decay time to 10% of $$n$$ samples.
 
 [previous-post]: https://amarantheum.github.io/420/capstone/2023/01/29/week-3-resonators.html
 
