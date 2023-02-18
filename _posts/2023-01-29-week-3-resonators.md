@@ -81,7 +81,7 @@ $$
 \end{align*}
 $$
 
-This is the generalized difference equation for a resonant filter given an arbitrary frequency and sample rate where $x[n]$ is the incoming signal and $y[n]$ is the signal after passsing through our LTI system. As you can see, this is quite easy to implement programmatically and, more importantly, is **computationally efficient** to the point that we can process a signal with many resonators in parallel.
+This is the generalized difference equation for a resonant filter given an arbitrary frequency and sample rate where $x[n]$ is the incoming signal and $y[n]$ is the signal after passing through our LTI system. As you can see, this is quite easy to implement programmatically and, more importantly, is **computationally efficient** to the point that we can process a signal with many resonators in parallel.
 
 There are many resources online for understanding the final conversion from transfer function to difference equation but I can update this post if someone requests further explanation.
 

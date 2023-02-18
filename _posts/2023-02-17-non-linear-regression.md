@@ -30,7 +30,7 @@ In other words, we want to minimize the distance between our model prediction an
 
 $$f(M)=\sum_{(x, y) \in P}\frac{1}{2}(M(x) - y)^2$$
 
-where $$M$$ is our model and $M(x)$ is the prediction of our model for input $x$. In many cases, we can solve this equation by calculating the gradient vector
-of the objective function and setting the gradient vector to 0. In other cases, the equation is minimized using a form of gradient descent which is an iterative process that minimies the objective function at each iteration.
+where $M$ is our model and $M(x)$ is the prediction of our model for input $x$. In many cases, we can solve this equation by calculating the gradient vector
+of the objective function and setting the gradient vector to 0. In other cases, the equation is minimized using a form of gradient descent which is an iterative process that minimizes the objective function at each iteration.
 
 [least-squares]: https://en.wikipedia.org/wiki/Least_squares
