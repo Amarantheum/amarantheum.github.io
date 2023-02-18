@@ -2,7 +2,7 @@
 layout: post
 title:  "Start of 420 Capstone Project"
 date:   2023-01-08 00:06:11 -0800
-categories: 420 Capstone
+categories: 420-Capstone
 ---
 
 ## Original Proposal：

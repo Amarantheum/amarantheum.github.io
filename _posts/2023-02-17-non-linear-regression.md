@@ -2,7 +2,7 @@
 layout: post
 title:  "Non-Linear Regression for Resonant Filters"
 date:   2023-02-17 00:16:37 -0800
-categories: 420 Capstone
+categories: 420-Capstone
 mathjax: true
 ---
 
@@ -30,7 +30,24 @@ In other words, we want to minimize the distance between our model prediction an
 
 $$f(M)=\sum_{(x, y) \in P}\frac{1}{2}(M(x) - y)^2$$
 
-where $M$ is our model and $M(x)$ is the prediction of our model for input $x$. In many cases, we can solve this equation by calculating the gradient vector
-of the objective function and setting the gradient vector to 0. In other cases, the equation is minimized using a form of gradient descent which is an iterative process that minimizes the objective function at each iteration.
+where $P$ is the set of points, $M$ is our model, and $M(x)$ is the prediction of our model for input $x$. In many cases, we can solve this equation by calculating the [gradient vector][gradient]
+of the objective function and setting the gradient vector to 0. In other cases, the equation is minimized using a form of [gradient descent][gradient-descent] which is an iterative process that minimizes the objective function at each iteration.
+
+## Resonant Filter Fitting
+
+Using this theory, we can create a model using our resonant filter definition and try to fit it to a set of points that we believe represents a resonance.
+
+For example, given the following set of points representing the magnitude of the frequency of a signal:
+
+![image](/assets/images/non-linear-regression/scatter.png)
+
+we can attempt to fit the following resonance curve:
+![image](/assets/images/non-linear-regression/curve-fit-ex.png)
+
+## Formal Mathematical Method
+
+The 
 
 [least-squares]: https://en.wikipedia.org/wiki/Least_squares
+[gradient]: https://en.wikipedia.org/wiki/Gradient
+[gradient-descent]: https://en.wikipedia.org/wiki/Gradient_descent
