@@ -22,14 +22,15 @@ Regression is the process of taking a set of points in a space with both an inde
 
 **Note that the dependent variable can be multi-dimensional*
 
-[Least squares][least-squares] is an approach to this problem that uses the sum of the squares of the residuals of the model as a function that we must minimize. Residuals are the distance between each point and the corresponding model prediction for that point.
+[Least squares][least-squares] is an approach to this problem that uses the sum of the squares of the residuals of the model as an objective function that we must minimize. Residuals are the distance between each point and the corresponding model prediction for that point.
 
 ![image](/assets/images/non-linear-regression/residual-ex.png)
 
-In other words, we want to minimize the distance between our model prediction and each of the points so that our model better predicts the data. This function can be written as:
+In other words, we want to minimize the distance between our model prediction and each of the points so that our model better predicts the data. The objective function can be written as:
 
 $$f(M)=\sum_{(x, y) \in P}\frac{1}{2}(M(x) - y)^2$$
 
-where $$M$$ is our model and $$M(x)$$ is the prediction of our model for input $$x$$.
+where $$M$$ is our model and $$M(x)$$ is the prediction of our model for input $$x$$. In many cases, we can solve this equation by calculating the gradient vector
+of the objective function and setting the gradient vector to 0. In other cases, the equation is minimized using a form of gradient descent which is an iterative process that minimies the objective function at each iteration.
 
 [least-squares]: https://en.wikipedia.org/wiki/Least_squares
