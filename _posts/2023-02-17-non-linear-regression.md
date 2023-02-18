@@ -30,8 +30,8 @@ In other words, we want to minimize the distance between our model prediction an
 
 $$f(M)=\sum_{(x, y) \in P}\frac{1}{2}(M(x) - y)^2$$
 
-where $P$ is the set of points, $M$ is our model, and $M(x)$ is the prediction of our model for input $x$. In many cases, we can solve this equation by calculating the [gradient vector][gradient]
-of the objective function and setting the gradient vector to 0. In other cases, the equation is minimized using a form of [gradient descent][gradient-descent] which is an iterative process that minimizes the objective function at each iteration.
+where $P$ is the set of points, $M$ is our model, and $M(x)$ is the prediction of our model for input $x$. In many cases, we can solve this equation by calculating the [gradient vector](https://en.wikipedia.org/wiki/Gradient){:target="blank_"}
+of the objective function and setting the gradient vector to 0. In other cases, the equation is minimized using a form of [gradient descent](https://en.wikipedia.org/wiki/Gradient_descent){:target="blank_"} which is an iterative process that minimizes the objective function at each iteration.
 
 ## Resonant Filter Fitting
 
@@ -46,10 +46,15 @@ we can attempt to fit the following resonance curve:
 
 ## Formal Mathematical Method
 
-The equation
+The resonance equation we derived in the [previous post][previous-post] will be the basis for our model:
 
+$$
+\begin{align*}
+\implies H(z) &= \frac{r\sin(w)z^{-1}}{(1-re^{j\omega}z^{-1})(1-re^{-j\omega}z^{-1})}\\
+\end{align*}
+$$
+
+
+The documentation for the library can be found [here](https://amarantheum.github.io/GPResonatorLibrary){:target="_blank"}.
 
 [previous-post]: https://amarantheum.github.io/420-capstone/2023/02/10/decay.html
-[least-squares]: https://en.wikipedia.org/wiki/Least_squares
-[gradient]: https://en.wikipedia.org/wiki/Gradient
-[gradient-descent]: https://en.wikipedia.org/wiki/Gradient_descent

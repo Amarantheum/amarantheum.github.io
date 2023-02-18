@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Week 3 - Math + Resonators"
+title:  "Math + Resonators"
 date:   2023-01-29 00:21:32 -0800
 categories: 420-Capstone
 mathjax: true
@@ -22,7 +22,7 @@ $$
 X(e^{j \omega}) \overset{\Delta}{=} \sum_{n=-\infty}^{\infty}x[n]e^{-j \omega n}
 $$
 
-This gives us a continuous $2\pi$ periodic function of $\omega$ (a frequency between 0 and $2\pi$) that describes the frequency content of the original signal. In the same way, we can define the frequency response of a LTI (linear time invariant) system $H(e^{j \omega})$ as the Fourier transform of its impulse response $h[n]$. In our case, we want to go in the reverse direction and build a system that creates resonances at desired frequencies. To do this, we'll use a new tool, [the Z-transform][z-transform-wiki], to shape the frequency response of our system to achieve the desired results.
+This gives us a continuous $2\pi$ periodic function of $\omega$ (a frequency between 0 and $2\pi$) that describes the frequency content of the original signal. In the same way, we can define the frequency response of a LTI (linear time invariant) system $H(e^{j \omega})$ as the Fourier transform of its impulse response $h[n]$. In our case, we want to go in the reverse direction and build a system that creates resonances at desired frequencies. To do this, we'll use a new tool, [the Z-transform](https://en.wikipedia.org/wiki/Z-transform){:target="_blank"}, to shape the frequency response of our system to achieve the desired results.
 
 The Z-transform is a more generalized form of the DTFT that includes the entire complex plane (just as the Laplace transform is a more generalized version of the continuous time Fourier transform). The Z-transform is defined as:
 
@@ -85,5 +85,4 @@ This is the generalized difference equation for a resonant filter given an arbit
 
 There are many resources online for understanding the final conversion from transfer function to difference equation but I can update this post if someone requests further explanation.
 
-[gp-resonator-docs]: https://amarantheum.github.io/GPResonatorLibrary 
-[z-transform-wiki]: https://en.wikipedia.org/wiki/Z-transform
+The documentation for the library can be found [here](https://amarantheum.github.io/GPResonatorLibrary){:target="_blank"}.

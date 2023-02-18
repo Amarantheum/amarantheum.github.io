@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Week 2 - Bode Plots"
+title:  "Bode Plots"
 date:   2023-01-22 00:09:00 -0800
 categories: 420-Capstone
 ---
@@ -9,6 +9,4 @@ This week, I wrote an implementation for displaying Bode plots. The library work
 
 ![image](/assets/images/bode_plot_0.png)
 
-In addition, I started implementing the resonators themselves by creating a ConjPoleResonator struct that represents a set of conjugate poles in the Z-plane. The documentation for the library can be found [here][gp-resonator-docs].
-
-[gp-resonator-docs]: https://amarantheum.github.io/GPResonatorLibrary 
+In addition, I started implementing the resonators themselves by creating a ConjPoleResonator struct that represents a set of conjugate poles in the Z-plane. The documentation for the library can be found [here](https://amarantheum.github.io/GPResonatorLibrary){:target="_blank"}.
