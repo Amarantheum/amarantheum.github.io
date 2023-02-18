@@ -22,7 +22,7 @@ Regression is the process of taking a set of points in a space with both an inde
 
 **Note that the dependent variable can be multi-dimensional*
 
-<a href=https://en.wikipedia.org/wiki/Least_squares target="_blank">Least squares</a> is an approach to this problem that uses the sum of the squares of the residuals of the model as an objective function that we must minimize. Residuals are the distance between each point and the corresponding model prediction for that point.
+[Least squares](https://en.wikipedia.org/wiki/Least_squares){:target="_blank"} is an approach to this problem that uses the sum of the squares of the residuals of the model as an objective function that we must minimize. Residuals are the distance between each point and the corresponding model prediction for that point.
 
 ![image](/assets/images/non-linear-regression/residual-ex.png)
 
