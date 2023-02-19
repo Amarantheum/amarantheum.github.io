@@ -77,29 +77,32 @@ This gives us the magnitude of the frequency response of a resonant filter in te
 In addition, we can add an extra gain variable that mimics our ability to amplify and attenuate the output of each of our resonators in the resonator array. We'll also assume that $\omega_0$ is given to use during the peak finding algorithm and is therefore known before computation. This gives us the following equation to perform regression with:
 
 $$
-f(g, r)=\frac{g\cdot r\sin(\omega_0)}{\sqrt{(\cos(2\omega)-2r\cos(\omega_0)\cos(\omega)+r^2)^2+(\sin(2\omega)-2r\cos(\omega_0)\sin(\omega))^2}}
+\begin{align*}
+f(g, r)&=\frac{g\cdot r\sin(\omega_0)}{\sqrt{(\cos(2\omega)-2r\cos(\omega_0)\cos(\omega)+r^2)^2+(\sin(2\omega)-2r\cos(\omega_0)\sin(\omega))^2}}\\
+\implies R(g, r) &= f(g,r)-y
+\end{align*}
 $$
 
-At this point, we could find the gradient $\nabla f$ and perform gradient descent to find optimal $g$ and $r$ values to match a given set of points $(\omega, y)$. However, the current residual function has an ugly, discontinuous, non-convex equation which may not be clean to work with. In order to make this easier to differentiate, the residual equation is rewritten by manipulating both sides of the equation:
+At this point, we could find the gradient $\nabla R$ of the residual function and perform gradient descent to find optimal $g$ and $r$ values to match a given set of points $(\omega, y)$. However, the current residual function has an ugly, discontinuous, non-convex equation which may not be clean to work with. In order to make this easier to differentiate, the residual equation $R$ is rewritten by manipulating both sides of the equation:
 
 $$
 \begin{align*}
 y&=\frac{g\cdot r\sin(\omega_0)}{\sqrt{(\cos(2\omega)-2r\cos(\omega_0)\cos(\omega)+r^2)^2+(\sin(2\omega)-2r\cos(\omega_0)\sin(\omega))^2}}\\
  \implies g^2r^2\sin^2(\omega_0) &= y^2\left[(\cos(2\omega)-2r\cos(\omega_0)\cos(\omega)+r^2)^2+(\sin(2\omega)-2r\cos(\omega_0)\sin(\omega))^2\right]\\
  \implies 0 &= g^2r^2\sin^2(\omega_0) - y^2\left[(\cos(2\omega)-2r\cos(\omega_0)\cos(\omega)+r^2)^2+(\sin(2\omega)-2r\cos(\omega_0)\sin(\omega))^2\right]\\
- &= r(g, r)
+ \implies R(g, r) &= g^2r^2\sin^2(\omega_0) - y^2\left[(\cos(2\omega)-2r\cos(\omega_0)\cos(\omega)+r^2)^2+(\sin(2\omega)-2r\cos(\omega_0)\sin(\omega))^2\right]
 \end{align*}
 $$
 
 The residual equation is now is a nicer form that is continuous with respect to all variables. and we just need to find the gradient:
 
 $$
-\nabla r(g, r)=\begin{bmatrix}
+\nabla R(g, r)=\begin{bmatrix}
 2g r^2 \sin^2(\omega_0)\\
 2g^2r\sin^2(\omega_0) - 4 y^2  (r - \cos(\omega_0) \cos(\omega)) (r (r - 2\cos(\omega_0)\cos(\omega)) + \cos(2\omega)) + 8 y^2 \cos(\omega_0) \sin^2(\omega) (\cos(\omega) - r \cos(\omega_0))
 \end{bmatrix}
 $$
 
-With this, we have everything that is necessary to perform gradient descent and solve for $g$ and $r$ for our resonator given a set of points in the frequency domain. The next step will be to analyze frequency spectrums and determine the locations of peaks.
+With this, we have everything that is necessary to find $g$ and $r$ for our resonator given a set of points in the frequency domain (we simply use gradient descent to minimize the square of all residuals). The next step will be to analyze frequency spectrums to determine the locations of peaks.
 
 [previous-post]: https://amarantheum.github.io/420-capstone/2023/02/10/decay.html
