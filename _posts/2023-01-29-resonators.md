@@ -8,7 +8,7 @@ mathjax: true
 
 ## Summary
 
-The focus of this week was the resonator implementation. In order to explain how the resonator works, we're first going to have to dive into some math.
+The focus of this week was the resonator implementation. In order to explain how the resonator works, we're first going to have to dive into some math. The documentation for the library can be found [here](https://amarantheum.github.io/GPResonatorLibrary){:target="_blank"}.
 
 ### Goals Completed
 
@@ -84,5 +84,3 @@ $$
 This is the generalized difference equation for a resonant filter given an arbitrary frequency and sample rate where $x[n]$ is the incoming signal and $y[n]$ is the signal after passing through our LTI system. As you can see, this is quite easy to implement programmatically and, more importantly, is **computationally efficient** to the point that we can process a signal with many resonators in parallel.
 
 There are many resources online for understanding the final conversion from transfer function to difference equation but I can update this post if someone requests further explanation.
-
-The documentation for the library can be found [here](https://amarantheum.github.io/GPResonatorLibrary){:target="_blank"}.
