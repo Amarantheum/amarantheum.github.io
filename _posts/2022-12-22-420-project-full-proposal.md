@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Start of 420 Capstone Project"
-date:   2023-01-08 00:06:11 -0800
+title:  "GP Resonator Library Proposal"
+date:   2022-12-08 00:11:06 -0800
 categories: 420-Capstone
 ---
 
