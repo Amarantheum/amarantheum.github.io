@@ -7,4 +7,4 @@ mathjax: true
 audio: true
 ---
 
-../../assets/audio/sbeve.wav
+assets/audio/sbeve.mp3
