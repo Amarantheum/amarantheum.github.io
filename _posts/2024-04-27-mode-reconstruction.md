@@ -3,9 +3,8 @@ layout: post
 title:  "Variational Methods for Mode Reconstruction From IRs for Modal Synthesis"
 date:   2024-04-27 00:07:57 -0800
 categories: 420-Capstone
+mathjax: true
 ---
-
-# Variational Methods for Mode Reconstruction From IRs for Modal Synthesis
 
 ## Explored Methodologies
 
