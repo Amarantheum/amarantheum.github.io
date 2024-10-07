@@ -2,7 +2,7 @@
 layout: post
 title:  "Math + Resonators"
 date:   2023-01-29 00:21:32 -0800
-categories: 420-Capstone
+categories: modal-synthesis
 mathjax: true
 ---
 

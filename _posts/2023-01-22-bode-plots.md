@@ -2,7 +2,7 @@
 layout: post
 title:  "Bode Plots"
 date:   2023-01-22 00:09:00 -0800
-categories: 420-Capstone
+categories: modal-synthesis
 ---
 
 ## Summary

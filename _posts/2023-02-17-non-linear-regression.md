@@ -2,7 +2,7 @@
 layout: post
 title:  "Non-Linear Regression for Resonant Filters"
 date:   2023-02-17 00:16:37 -0800
-categories: 420-Capstone
+categories: modal-synthesis
 mathjax: true
 ---
 
@@ -105,4 +105,4 @@ $$
 
 With this, we have everything that is necessary to find $g$ and $r$ for our resonator given a set of points in the frequency domain (we simply use gradient descent to minimize the square of all residuals). The next step will be to analyze frequency spectrums to determine the locations of peaks.
 
-[previous-post]: https://amarantheum.github.io/420-capstone/2023/02/10/decay.html
+[previous-post]: https://amarantheum.github.io/modal-synthesis/2023/02/10/decay.html

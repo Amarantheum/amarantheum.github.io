@@ -2,7 +2,7 @@
 layout: post
 title:  "GP Resonator Library Concept"
 date:   2022-09-09 00:08:51 -0800
-categories: 420-Capstone
+categories: modal-synthesis
 ---
 
 ## Project Idea
