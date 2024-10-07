@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Auto-Regressive Methods for Mode Estimation"
+title:  "test audio embed"
 date:   2024-09-27 00:21:50 -0800
 categories: modal-synthesis
 mathjax: true
