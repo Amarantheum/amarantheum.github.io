@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Modal Synthesis Library Application: MaxMSP and Bells"
+title:  "Harmonograph Simulator"
 date:   2021-04-12 00:00:00 -0800
 categories: harmonograph-simulator
 ---
