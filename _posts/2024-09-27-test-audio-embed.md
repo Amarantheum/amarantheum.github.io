@@ -7,6 +7,7 @@ mathjax: true
 ---
 
 
-<audio controls="" autoplay="" name="media">
-    <source src="../assets/audio/sbeve.mp3" type="audio/mp3">
+<audio controls>
+    <source src="https://amarantheum.github.io/assets/audio/sbeve.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
 </audio>
