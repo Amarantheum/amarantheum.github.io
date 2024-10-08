@@ -8,5 +8,5 @@ mathjax: true
 
 
 <video controls="" autoplay="" name="media">
-    <source src="assets/audio/sbeve.mp3" type="audio/mp3">
+    <source src="../assets/audio/sbeve.mp3" type="audio/mp3">
 </video>
