@@ -7,6 +7,6 @@ mathjax: true
 ---
 
 
-<video controls="" autoplay="" name="media">
+<audio controls="" autoplay="" name="media">
     <source src="../assets/audio/sbeve.mp3" type="audio/mp3">
-</video>
+</audio>
