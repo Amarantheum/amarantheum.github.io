@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "test audio embed"
+title:  "Modal Synthesis Library Application: Atmospheric Piece"
 date:   2024-10-02 00:01:32 -0800
 categories: modal-synthesis
 audio: true
