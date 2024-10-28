@@ -5,8 +5,7 @@ date:   2022-07-12 00:00:00 -0800
 categories: minecraft-computer
 ---
 
-I designed a digital computer for performing arithmetic operations using boolean logic from scratch and implemented it in Minecraft. Below is a video I made of me showcasing the system (badly) with some commentary as well as some images taken during implementation.
-<iframe src="https://drive.google.com/file/d/1kMF1Ds4WnNsyZ2xeFgCW6MTZepwi5gZE/preview" width="640" height="480" allow="autoplay"></iframe>
+I designed a digital computer for performing arithmetic operations using boolean logic from scratch and implemented it in Minecraft. Below are some images taken during implementation as well as a video I made of me showcasing (badly) a usecase of the system.
 
 ![image](/assets/images/minecraft-computer/sevensegment.png)
 The basic layout of the computer
@@ -19,3 +18,6 @@ The basic layout of the computer
 
 ![image](/assets/images/minecraft-computer/passwordinput.png)
 **The password input module:** This module stores a password input as 16 bits of binary coded decimal
+
+This video showcases the computer being used as a banking system.
+<iframe src="https://drive.google.com/file/d/1kMF1Ds4WnNsyZ2xeFgCW6MTZepwi5gZE/preview" width="640" height="480" allow="autoplay"></iframe>
