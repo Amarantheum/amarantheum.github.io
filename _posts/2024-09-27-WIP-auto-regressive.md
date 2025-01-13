@@ -7,3 +7,5 @@ mathjax: true
 ---
 
 This concept is currently WIP
+
+The idea is to treat a signal as the output of an autoregressive process and extract the modal information.
